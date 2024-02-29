@@ -37,7 +37,7 @@ Create a Python script named `app.py` using Flask and psutil for local system mo
 
 - **Function**: To define a Flask web application, including its routes and view functions, handling HTTP requests, and generating responses. It also serves HTML files located in the templates folder.
 
-![Flask App Screenshot](pics/Screenshot_2024-02-28_190430.png)
+![Flask App Screenshot](https://github.com/tpham45/DevOps_Project/blob/main/pics/Screenshot%202024-02-28%20190430.png)
 
 - **Execution**: Run the script using `python app.py` to start the application.
 
@@ -91,4 +91,16 @@ Deploying applications on AWS Elastic Kubernetes Service (EKS) rather than keepi
 - **Simplified Operations**: Deploying on AWS EKS simplifies operations, allowing developers to focus on building and improving their applications rather than managing the underlying infrastructure.
 - **Ecosystem Integration**: EKS easily integrates with other AWS services and third-party tools, providing a rich ecosystem for monitoring, logging, CI/CD, and more, further enhancing development and operational efficiency.
 
-In summary, deploying on AWS EKS offers scalability, reliability, security, and cost benefits that are hard to achieve with local hosting. It allows teams to focus on development and innovation by leveraging AWS's managed services and global infrastructure.
+
+## Three Environment Deploy Explanation
+**Local Machine**:
+- **Purpose**: The local machine deployment is typically used for development and testing. It allows developers to quickly write, test, and iterate on their code in a local environment that's easy to set up and use. This step is crucial for initial development phases, where quick feedback and frequent changes are common.
+- **Benefits**: Easy setup, quick feedback loop for development, and debugging. Ideal for initial development and testing phases.
+
+**Docker**:
+- **Purpose**: Docker deployment takes the application from the local environment and packages it into a container. This container includes all the necessary dependencies the application needs to run. By doing this, the application can be run in any environment that supports Docker, ensuring consistency across different development, testing, and production environments.
+- **Benefits**: Ensures consistency across environments, simplifies dependencies management, and facilitates continuous integration and deployment (CI/CD) processes. Docker containers can be easily shared, making it easier to collaborate across teams and deploy to different environments.
+  
+**AWS EKS (Elastic Kubernetes Service)**:
+- **Purpose**: Deploying the application on AWS EKS moves it to a managed Kubernetes service in the cloud. This step is aimed at production deployment, where the application needs to be scalable, highly available, and secure. AWS EKS provides the infrastructure to manage, scale, and deploy containerized applications easily.
+- **Benefits**: Scalability, reliability, security, and cost-effectiveness. AWS EKS automates many of the complexities of managing a Kubernetes cluster, allowing teams to focus more on development rather than infrastructure management. It also integrates well with other AWS services for monitoring, security, and compliance.
