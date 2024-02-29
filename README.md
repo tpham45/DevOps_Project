@@ -6,7 +6,7 @@ This project outlines the process of creating and deploying a Cloud Native Resou
 
 ## Framework
 
-![CI/CD Toolchain Example](pics/CI_CD_toolchain_example.png)
+![CI/CD Toolchain Example](https://github.com/tpham45/DevOps_Project/blob/main/pics/CI_CD%20toolchain%20example.png)
 
 ## Tech Stack
 
